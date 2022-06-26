@@ -47,7 +47,9 @@ git pull origin main
 
 #Ver historial de commits y cambios 
 git log
-
+git log --oneline
+git log --graph
+git log --graph --decorate --oneline --all
 
 #Ramas en Git 
 
@@ -55,4 +57,11 @@ git log
 git branch
 
 #Crear una nueva rama con el nombre que quieras
-git branch nueva-rama-creada
+git branch rama-de-prueba
+
+#Cambiar de una rama a otra 
+git checkout rama-de-prueba
+
+
+#Crear una nueva rama y te pone en esa nueva rama
+git checkout -b rama-nueva 
