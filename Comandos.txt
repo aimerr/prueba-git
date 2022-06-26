@@ -24,6 +24,7 @@ git commit -m "Algun comentario del commit"
 #Hacer commit sin hacer git add
 git commit -am "Se hace un comit de todo sin hacer git add"
 
+Revisar el comando git --amend (Solo usar hasta 10 seg despues de un commit despues de los 10sg es mejor no usar)
 
 #Deshace el ultimo commit subido localmente (No remotamente)
 $ git reset --soft HEAD~1
@@ -40,10 +41,8 @@ origin  https://github.com/aimerr/prueba-git.git (push)
 #Publica tus cambios locales en tu repositorio en la nube
 git push origin main
 
-
 #Descargar cambios que se hicieron en el repositorio remoto hacia tu local 
 git pull origin main
-
 
 #Ver historial de commits y cambios 
 git log
@@ -60,14 +59,23 @@ git branch
 git branch rama-de-prueba
 
 #Cambiar de una rama a otra 
-git checkout rama-de-prueba
+git checkout rama-de-prueba 
+git checkout 3ab38k4d (id del commit)
 
 
 #Crear una nueva rama y te pone en esa nueva rama
 git checkout -b rama-nueva 
 
+#Eliminar una rama validando que se halla hecho merged
+git branch -d cambiar-color-fondo
 
+#Eliminar una rama sin validad nada
+git branch -D cambiar-color-fondo
 
 #Encontrar diferencias entre archivos o ramas
 git diff 
 git diff main rama-de-prueba
+
+
+#LLamar al recolector de basura
+git gc
