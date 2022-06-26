@@ -78,3 +78,7 @@ git diff main rama-de-prueba
 
 #LLamar al recolector de basura
 git gc
+
+
+#Para los issues se recomienda usar gitdesk
+# se recomienda ver los videos para recordar como se usan los issues
