@@ -76,6 +76,5 @@ git branch -D cambiar-color-fondo
 git diff 
 git diff main rama-de-prueba
 
-
 #LLamar al recolector de basura
 git gc
