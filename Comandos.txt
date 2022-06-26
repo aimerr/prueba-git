@@ -1,0 +1,23 @@
+
+#Inicia un Repositorio de manera local
+git init
+
+#Clona un Repositorio de algun sitio remoto
+git clone https://.......
+
+#Revisa el estado de tus cambios
+git status
+
+#Agrega los cambios para que se vallan en el proximo commit
+git add .
+git add index.html
+
+#Reversa la accion anterior
+git restore --staged index.html
+
+
+#Hace el commit a los cambios 
+git commit -m "Algun comentario del commit"
+
+#Deshace el ultimo commit subido localmente (No remotamente)
+$ git reset --soft HEAD~1
