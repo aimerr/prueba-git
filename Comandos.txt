@@ -3,7 +3,7 @@
 git init
 
 #Clona un Repositorio de algun sitio remoto
-git clone https://.......
+git clone  https://github.com/aimerr/prueba-git.git
 
 #Revisa el estado de tus cambios
 git status
@@ -13,6 +13,7 @@ git add .
 git add index.html
 
 #Reversa la accion anterior
+git restore --staged .
 git restore --staged index.html
 
 
@@ -21,3 +22,15 @@ git commit -m "Algun comentario del commit"
 
 #Deshace el ultimo commit subido localmente (No remotamente)
 $ git reset --soft HEAD~1
+
+#Ver la lista de remotos que tenemos disponible para subir cambios
+$ git remote
+origin
+
+$ git remote -v
+origin  https://github.com/aimerr/prueba-git.git (fetch)
+origin  https://github.com/aimerr/prueba-git.git (push)
+
+
+#Publica tus cambios locales en tu repositorio en la nube
+git push origin main
