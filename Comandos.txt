@@ -65,3 +65,9 @@ git checkout rama-de-prueba
 
 #Crear una nueva rama y te pone en esa nueva rama
 git checkout -b rama-nueva 
+
+
+
+#Encontrar diferencias entre archivos o ramas
+git diff 
+git diff main rama-de-prueba
