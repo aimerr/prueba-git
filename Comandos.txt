@@ -59,3 +59,7 @@ git branch rama-de-prueba
 
 #Cambiar de una rama a otra 
 git checkout rama-de-prueba
+
+
+#Crear una nueva rama y te pone en esa nueva rama
+git checkout -b rama-nueva 
